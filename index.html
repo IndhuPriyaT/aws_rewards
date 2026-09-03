@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>AWS Student Rewards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="experience" aria-labelledby="page-title">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">aws</span><span>STUDENT REWARDS</span></div>
+    </header>
+
+    <section class="hero" id="reward-experience">
+      <div class="eyebrow"><span class="spark">✦</span> A LITTLE SOMETHING FOR YOUR NEXT BIG MOVE</div>
+      <h1 id="page-title">YOU HAVE <span>$579</span><br>WAITING</h1>
+      <p class="intro">Your skills just unlocked something special.<br>Tap the box to reveal your student rewards.</p>
+
+      <button class="gift-trigger" id="gift-trigger" type="button" aria-expanded="false" aria-controls="unlocked-panel">
+        <span class="tap-hint">TAP TO OPEN <span>↗</span></span>
+        <span class="gift-box" aria-hidden="true">
+          <span class="gift-lid"></span>
+          <span class="gift-body"></span>
+          <span class="gift-ribbon ribbon-vertical"></span>
+          <span class="gift-ribbon ribbon-horizontal"></span>
+          <span class="bow bow-left"></span>
+          <span class="bow bow-right"></span>
+          <span class="bow-knot"></span>
+        </span>
+        <span class="gift-shadow" aria-hidden="true"></span>
+      </button>
+
+      <div class="unlock-copy" id="unlock-copy" aria-live="polite">Your reward is wrapped and ready.</div>
+
+      <div class="unlocked-panel" id="unlocked-panel" hidden>
+        <div class="confetti" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="success-badge"><span>✦</span> UNLOCKED</div>
+        <h2>The gift is unlocked!</h2>
+        <p class="panel-subtitle">Power up your learning journey with rewards made for your next chapter.</p>
+
+        <ul class="rewards-list">
+          <li><span class="reward-icon graduation">✦</span><span><strong>1 Year Premium Skill Builder</strong><small>Learn at your own pace</small></span><b>01</b></li>
+          <li><span class="reward-icon credits">$</span><span><strong>Up to $30 AWS Credits</strong><small>Build more, worry less</small></span><b>02</b></li>
+          <li><span class="reward-icon trophy">★</span><span><strong>AWS Foundational Certification Exam Voucher</strong><small>Make your progress official</small></span><b>03</b></li>
+        </ul>
+
+        <div class="claim-area">
+          <div class="qr-frame"><img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=12&data=https%3A%2F%2Fbuilder.aws.com%2Fstudent-rewards" alt="QR code for AWS student rewards"></div>
+          <div class="scan-label"><span>POINT. SCAN. GO.</span><strong>Your next step is one scan away.</strong></div>
+        </div>
+        <a class="manual-link" href="https://builder.aws.com/student-rewards" target="_blank" rel="noreferrer">Open rewards page directly <span>↗</span></a>
+        <button class="reset-button" id="reset-button" type="button">↻ RESET GIFT</button>
+      </div>
+    </section>
+    <footer class="footer">Keep learning. Keep building. <span>▰</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
